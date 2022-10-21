@@ -1,0 +1,15 @@
+# Envirnment Variables
+.env
+
+# VS-Code dot files
+.vscode
+
+# JetBrains IDE dot files
+.idea
+
+# C++ and C output files
+.out
+.exe
+
+# Node Modules
+node_modules
