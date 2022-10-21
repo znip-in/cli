@@ -21,7 +21,7 @@ const version = "v1.0.0";
 if (args.length === 0) {
     const errorMessage = `
     ${redBold("Error")}: No arguments provided
-    type ${blueBold("snip -h")} for help
+    type ${blueBold("cnip -h")} for help
     `;
     console.log(errorMessage);
     process.exit(1);
@@ -36,14 +36,14 @@ if (args.includes('-v') || args.includes('--version')) {
     process.exit(0);
 }
 
-// TODO v1.2.0 `snip -u` or `snip --update` update snip to latest version
+// TODO v1.2.0 `cnip -u` or `cnip --update` update cnip to latest version
 
 if (args.includes('-h') || args.includes('--help')) {
     const helpMessage = `
-    ${green(`snip ${version}`)}
+    ${green(`cnip ${version}`)}
     
-    ${blue("snip snippet")}: add snippet to project with same name as snippet
-    ${blue("snip snippet -n name")}: add snippet to project with name
+    ${blue("cnip snippet")}: add snippet to project with same name as snippet
+    ${blue("cnip snippet -n name")}: add snippet to project with name
     `;
     console.log(helpMessage);
     process.exit(0);
