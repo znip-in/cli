@@ -1,7 +1,7 @@
 {
   "name": "znip",
-  "version": "1.0.0",
-  "description": "CLI for quick snippet from server",
+  "version": "1.0.1",
+  "description": "CLI to quickly add snippets to your project",
   "type": "module",
   "main": "index.js",
   "bin": "./index.js",

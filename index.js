@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import fetch from "node-fetch";
-import {blue, blueBold, green, redBold} from "./utils/color.js";
+import {red, green, blue, redBold, greenBold, blueBold} from "./utils/color.js";
 import * as fs from "fs";
 
 /**
@@ -26,7 +26,7 @@ if (args.length === 0) {
     console.log(errorMessage);
     process.exit(1);
 }
-// TODO v1.0.1 invalid arguments
+// TODO v1.0.2 invalid arguments
 
 
 // Info options
@@ -40,10 +40,10 @@ if (args.includes('-v') || args.includes('--version')) {
 
 if (args.includes('-h') || args.includes('--help')) {
     const helpMessage = `
-    ${green(`znip ${version}`)}
+    ${greenBold(`znip ${version}`)}
     
-    ${blue("znip snippet")}: add snippet to project with same name as snippet
-    ${blue("znip snippet -n name")}: add snippet to project with name
+    ${blueBold("znip snippet")}: add snippet to project with same name as snippet
+    ${blueBold("znip snippet -n name")}: add snippet to project with name
     `;
     console.log(helpMessage);
     process.exit(0);
