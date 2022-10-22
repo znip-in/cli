@@ -18,13 +18,10 @@ $ npm i -g znip
 
 - [x] `znip snippet -o path -n name` - add snippet to given path with name
 
-#### TODO v1.2.0
-- [ ] `znip -u` or `znip --update` - update znip to latest version
-
 #### TODO Options v2.0.0
 - [ ] `znip snippet -up` - update of upload snippet to server
 
 - [ ] `znip snippet -up -n name` - update of upload snippet to server with name
 
 #### TODO Options v3.0.0
-- [ ] `znip login` - login to account with separate database for snippets
+- [ ] `znip --login` - login to account with separate database for snippets
