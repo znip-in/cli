@@ -18,7 +18,7 @@ const [, , ...args] = process.argv;
  * Current version
  * @type {string}
  */
-const version = "1.2.0";
+const version = "1.2.1";
 
 // Errors
 
@@ -60,7 +60,7 @@ checkForUpdate(version);
  * The base url to server
  * @type {string}
  */
-const baseUrl = 'https://kunalsin9h.dev/snip/';
+const baseUrl = 'https://kunalsin9h.dev/znip/';
 
 /**
  * The name of snippet to fetch
