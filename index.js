@@ -6,6 +6,7 @@ import path from "path";
 
 import {red, green, blue, redBold, greenBold, blueBold} from "./utils/color.js";
 import {checkOption} from "./scripts/invalidArguments.js";
+import checkForUpdate from "./scripts/chechForUpdate.js";
 
 /**
  * Command line arguments
@@ -17,7 +18,7 @@ const [, , ...args] = process.argv;
  * Current version
  * @type {string}
  */
-const version = "v1.1.0";
+const version = "1.2.0";
 
 // Errors
 
@@ -40,14 +41,18 @@ if (args.includes('-v') || args.includes('--version')) {
 
 if (args.includes('-h') || args.includes('--help')) {
     const helpMessage = `
-    ${greenBold(`znip ${version}`)}
-    
-    ${blueBold("znip snippet")}: add snippet to project with same name as snippet
-    ${blueBold("znip snippet -n name")}: add snippet to project with name
+    ${greenBold(`znip v${version}`)}
+
+    ${blueBold("znip snippet")}: add snippet with same name as snippet
+    ${blueBold("znip snippet -n name")}: add snippet with name
+    ${blueBold("znip snippet -o path")}: add snippet with  name as snippet at path
+    ${blueBold("znip snippet -n name -o path")}: add snippet with name at path
     `;
     console.log(helpMessage);
     process.exit(0);
 }
+
+checkForUpdate(version);
 
 // Snippet fetch
 
