@@ -14,9 +14,9 @@ $ npm i -g znip
 - [x] `znip snippet -n name` - add snippet to project with name
 
 #### TODO Options v1.1.0
-- [ ] `znip snippet -o path` - add snippet to given path
+- [x] `znip snippet -o path` - add snippet to given path
 
-- [ ] `znip snippet -o path -n name` - add snippet to given path with name
+- [x] `znip snippet -o path -n name` - add snippet to given path with name
 
 #### TODO v1.2.0
 - [ ] `znip -u` or `znip --update` - update znip to latest version
